@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/main.css" type="text/css">
+
+   <!--imports for logo nav-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+      
+    <!--bx slider imports-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+
+     <!--footer css-->
+     <link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet"> 
+      
+    <title>The North: Services</title>
+    <link rel="icon" href="assets/imgs/dragoneye.png" type="img/png"> 
+      
+    <!--kwicks-->
+      
+    <link rel='stylesheet' type='text/css' href='css/jquery.kwicks.css' />
+    <link rel='stylesheet' type='text/css' href='css/kwicks.css' />
+    <script src='script/jquery.kwicks.js' type='text/javascript'></script>
+    <script src='script/kwicks.js' type='text/javascript'></script>
+      
+    <script src="script/myprogram.js"></script>
+    
+    <script src="script/kwickstoggle.js"></script>
+    <script src="script/subscribe.js"></script>
+      <style>
+          .kwicksdiv{display: none;
+          width: 100%;
+          height: 70%;
+            color: black;
+          }
+      </style>
+
+</head>
+  
+    
+    
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+          <img src="assets/imgs/logo.png" alt="logo" width="300" height="100">
+        </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="memzone.html">Member Zone</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="services.html">Services
+            <span class="sr-only">(current)</span>
+            </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+          <li class="nav-item">
+          <a class=" btn btn-primary" href="signup.html">Login/Signup</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<div id="container">
+
+
+
+<div class="container">
+
+<div class="row">
+
+<div class="col-lg-6 col-md-8 col-sm-12">
+    
+<ul class='kwicks kwicks-vertical'>
+    
+			<li>
+				<ul class='kwicks kwicks-horizontal'>
+                    <li><a id="kli1" class="kwicksli" href="#kik1" onclick="kik1()"><img src="assets/imgs/kw1.jpg"></a></li><li><a id="kli2" class="kwicksli" href="#kik2" onclick="kik2()"><img src="assets/imgs/kw2.jpg"></a></li><li><a id="kli3" class="kwicksli" href="#kik3" onclick="kik3()"><img src="assets/imgs/kw3.jpg"></a></li>
+				</ul>
+			</li>
+			<li>
+				<ul class='kwicks kwicks-horizontal'>
+                    <li><a id="kli4" class="kwicksli" href="#kik4" onclick="kik4()"><img src="assets/imgs/kw4.jpg"></a></li><li><a id="kli5" class="kwicksli" href="#kik5" onclick="kik5()"><img src="assets/imgs/kw5.jpg"></a></li><li> <a id="kli6" class="kwicksli" href="#kik6" onclick="kik6()"><img src="assets/imgs/kw6.jpg"></a></li>
+				</ul>
+			</li>
+			<li>
+				<ul class='kwicks kwicks-horizontal'>
+                    <li><a id="kli7" class="kwicksli" href="#kik7" onclick="kik7()"><img src="assets/imgs/kw7.jpg"></a></li><li><a id="kli8" class="kwicksli" href="#kik8" onclick="kik8()"><img src="assets/imgs/kw8.jpg"></a></li><li><a id="kli9" class="kwicksli" href="#kik9" onclick="kik9()"><img src="assets/imgs/kw9.jpg"></a></li>
+				</ul>
+			</li>
+    
+		</ul>
+
+</div>
+
+
+
+
+
+<div class="col-lg-6 col-md-4 col-sm-12">
+<div class="row border border-white" style="background-color: black">
+<big>    
+<div id="display"></div>
+</big>
+<small>Dynamically determines if discount is applicable based on time of day and day of the week. </small>
+</div>
+<br>
+<div class="row" id="kik"></div>
+<div id="kik1" class="kwicksdiv kikinactive bg-white">Food that would delight your taste buds</div>
+<div id="kik2" class="kwicksdiv kikinactive bg-white">Enjoy the ambience and hospitality by our staff</div>
+<div id="kik3" class="kwicksdiv kikinactive bg-white">The best chilled out drinks for the game day!</div>
+<div id="kik4" class="kwicksdiv kikinactive bg-white">The best of all wines!</div>
+<div id="kik5" class="kwicksdiv kikinactive bg-white">Relax with drinks and cheer along for the raptors</div>
+<div id="kik6" class="kwicksdiv kikinactive bg-white">Light snacks for your appetite</div>
+<div id="kik7" class="kwicksdiv kikinactive bg-white">Enjoy a full course menu with drinks</div>
+<div id="kik8" class="kwicksdiv kikinactive bg-white">Enjoy a pizza treat</div>
+<div id="kik9" class="kwicksdiv kikinactive bg-white">chill out with like minded fans</div>            
+
+</div>
+</div>
+
+</div>
+    </div>
+    
+  <!-- Footer -->
+		<footer class="pt-5 pb-4" id="contact">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+						<h5 class="mb-4 font-weight-bold">ABOUT US</h5>
+						<p class="mb-4">The Sports Bar with a difference!</p>
+						<ul class="f-address">
+							<li>
+								<div class="row">
+									<div class="col-1"><i class="fas fa-map-marker"></i></div>
+									<div class="col-10">
+										<h6 class="font-weight-bold mb-0">Address:</h6>
+										<p>The North: SportsBar and Grill, Doon, Kitchener</p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-1"><i class="far fa-envelope"></i></div>
+									<div class="col-10">
+										<h6 class="font-weight-bold mb-0">Have any questions?</h6>
+										<p><a href="mailto:Support@userthemes.com">Email Us at: Support@userthemes.com</a></p>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-1"><i class="fas fa-phone-volume"></i></div>
+									<div class="col-10">
+										<h6 class="font-weight-bold mb-0">For Immediate Support:</h6>
+										<p><a href="tel:">Call Us at (999)999-9999</a></p>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+						<h5 class="mb-4 font-weight-bold">FRESH TWEETS</h5>
+						<ul class="f-address">
+							<li>
+								<div class="row">
+									<div class="col-1"><i class="fab fa-twitter"></i></div>
+									<div class="col-10">
+										<p class="mb-0"><a href="https://twitter.com/">@john: </a>Must Visit Place</p>
+										<label>10 Mins Ago</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-1"><i class="fab fa-twitter"></i></div>
+									<div class="col-10">
+										<p class="mb-0"><a href="https://twitter.com/">@abhi: </a>Great Drinks</p>
+										<label>15 Mins Ago</label>
+									</div>
+								</div>
+							</li>
+							<li>
+								<div class="row">
+									<div class="col-1"><i class="fab fa-twitter"></i></div>
+									<div class="col-10">
+										<p class="mb-0"><a href="https://twitter.com/">@priya: </a>Go Raptors Go!</p>
+										<label>20 Mins Ago</label>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+						<h5 class="mb-4 font-weight-bold">LATEST UPDATES</h5>
+						<ul class="recent-post">
+							<li>
+								<label class="mr-3">28 <br><span>APR</span></label>
+								<span>Upcoming Fan club Get Together</span>
+							</li>
+							<li>
+								<label class="mr-3">29 <br><span>APR</span></label>
+								<span>Match Day: Read Expert Opinion</span>
+							</li>
+							<li>
+								<label class="mr-3">30 <br><span>APR</span></label>
+								<span>Special Discount of game day!</span>
+							</li>
+						</ul>
+					</div>
+					<div class="col-lg-3 col-md-6 col-sm-6 mt-2 mb-4">
+						<h5 class="mb-4 font-weight-bold">CONNECT WITH US</h5>
+						<div class="input-group">
+						  	<input type="text" class="form-control" placeholder="Your Email Address"><br><br>
+                            
+						</div>
+                       <div> <input type="button" class="btn btn-primary" name="subscribe" id="subscribe" value="Subscribe" onclick="subscribe()"></div>
+                        <br>
+                        <div class="navbar-form navbar-left"> <h5 class="mb-4 font-weight-bold">SEARCH THE SITE</h5>
+        <input type="text" class="form-control form-control-sm" placeholder="Enter keyword"><br> 
+          </div>
+          <button type="button" class="btn btn-primary btn-sm" style="display: inline">Search</button>
+                        
+						<ul class="social-pet mt-4">
+							<li><a href="https://www.facebook.com/" title="facebook"><i class="fab fa-facebook-f"></i></a></li>
+							<li><a href="https://twitter.com/" title="twitter"><i class="fab fa-twitter"></i></a></li>
+							<li><a href="https://accounts.google.com/signin/v2/identifier?passive=1209600&continue=https%3A%2F%2Faboutme.google.com%2Fu%2F0%2F%3Freferer%3Dgplus&followup=https%3A%2F%2Faboutme.google.com%2Fu%2F0%2F%3Freferer%3Dgplus&flowName=GlifWebSignIn&flowEntry=ServiceLogin" title="google-plus"><i class="fab fa-google-plus-g"></i></a></li>
+							<li><a href="https://www.instagram.com/" title="instagram"><i class="fab fa-instagram"></i></a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!-- Copyright -->
+		<section class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12 ">
+						<div class="text-center text-white">
+							&copy; 2019 The North Sports Bar and Grill. All Rights Reserved.
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+
+</body>
+</html>

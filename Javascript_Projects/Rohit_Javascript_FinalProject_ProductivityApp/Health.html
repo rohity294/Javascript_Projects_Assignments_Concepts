@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Calculate Calries</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/health.js"></script>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="wrapper">
+            <nav>
+                <div class="topnav">
+                    <a href="#">Anytime Fitness</a>
+                    <a class="active" href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                </div>
+            </nav>
+        <main>
+            <div class="container">
+                <img src="images/protein.jpg" alt="a women jumping from one mountain to another">
+                <h1 class="headImage">Calories Intake – How Much Calries Should You Eat Per Day?</h1>
+                
+                <h2>What type of Food has most Calories.</h2>
+                <p>
+                    There are many different combinations of food that a person can eat to meet their Caolries intake requirements. For many people, a large portion of Calories intake comes from meat and dairy, though it is possible to get enough Calories while meeting certain dietary restrictions you might have. Generally, it is easier to meet your RDA of Calories by consuming meat and dairy, but an excess of either can have a negative health impact. There are plenty of plant-based Calries options, but they generally contain less Calories in a given serving. Ideally, a person should consume a mixture of meat, dairy, and plant-based foods in order to meet their RDA and have a balanced diet replete with nutrients.
+
+                    If possible, consuming a variety of complete Calriess is recommended. A complete Calries is a Calries that contains a good amount of each of the nine essential amino acids required in the human diet. Examples of complete Calries foods or meals include:
+                </p>
+            </div>
+            <h1 id="weightcalculater">Calories Calculator</h1>
+        <form name="calries">
+            
+                 
+            <label for="weight" >Weight</label><br>
+            <input type="text" name="weight" id="weight" class="lineHeight" placeholder="Pounds">
+                <span class="color"></span><br>
+
+            <label for="height">Height</label><br>
+            <input type="text" name="height" id="height" class="lineHeight" placeholder="Feets">
+                <span class="color"></span><br>
+            <input type="text" id="inches" class="lineHeight" placeholder="inches">
+                <span class="color"></span><br>
+            <label for="gender">Gender</label><br>
+            <input type="radio" id="female" name="selection" value="female" checked>
+            <label for="Female">Female</label><br>
+            <input type="radio" id="male" name="selection" value="male">
+            <label for="male">Male</label><br>
+            <label for="age">Age</label><br>
+            <input type="text" id="age" class="lineHeight" name="age">
+                <span class="color"></span><br>
+            <label for="activity">Physical Activities</label><br>
+            <select id="exercise" class="lineHeight">
+                    <option value="2">Exercise less than three time in a week</option>
+                    <option value="3">Three to Five Time Per Week</option>
+                    <option value="4">Exercise More Than Five Times</option>
+            </select><br>
+            
+            <label class="label">Calories Per Day:</label><br>
+            <input type="text" id="result" class="lineHeight" disabled><br>
+            <label class="label">To lose 2lb per week need to eat calries per day shown in the box</label><br>
+            <input type="text" id="lossWight" class="lineHeight" disabled><br>
+            <label class="label">To gain 2lb per week need to eat calries per day shown in the box</label><br>
+            <input type="text" id="gainWight" class="lineHeight" disabled><br>
+            <div class="button">
+            <input type="button" id="Clickk" value="Calculate Calries">
+            <input type="button" id="clear" value="Clear">
+            </div>
+            
+        </form>
+            </main> 
+            <footer>
+            <p>Developed by: Atul Kapila</p>
+            <p>Copyright &copy; 2019 </p>
+        </footer>
+
+            </div>
+    </body>
+</html>

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Water Calculate</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/water.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <main>
+            <nav>
+                <div class="topnav">
+                    <a href="#">Anytime Fitness</a>
+                    <a class="active" href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                </div>
+            </nav>
+
+            <div class="container">
+                <img src="images/water.jpg" alt="a glass with water">
+                <h1 class="water">Water Intake – How Much Water You Should Drink Per Day?</h1>
+                 <h3>Water is essential to good health, yet needs vary by individual. These guidelines can help ensure you drink enough fluids.</h3>
+                <p>How much water should you drink each day? It's a simple question with no easy answer.</p>
+
+                <p>Studies have produced varying recommendations over the years. But your individual water needs depend on many factors, including your health, how active you are and where you live.</p>
+
+                <p>No single formula fits everyone. But knowing more about your body's need for fluids will help you estimate how much water to drink each day.</p>
+                <h2>Staying safely hydrated</h2>
+                <p>Your fluid intake is probably adequate if:</p>
+
+                   <p> You rarely feel thirsty
+                    Your urine is colorless or light yellow
+                    A doctor or registered dietitian can help you determine the amount of water that's right for you every day.</p>
+
+                   <p> To prevent dehydration and make sure your body has the fluids it needs, make water your beverage of choice. It's also a good idea to:
+
+                    Drink a glass of water or other calorie-free or low-calorie beverage with each meal and between each meal.
+                    Drink water before, during and after exercise.
+                    Drink water if you're feeling hungry. Thirst is often c onfused with hunger.
+                </p>
+                <h2>What about the advice to drink 8 glasses a day?
+                    <br>
+                    <button onclick="typeWriter()" class="button">Want To Know</button></h2>
+                <p id="list"></p>
+                <p> Want to stay hydrated??. Click the button below to recieve water reminder every hour.    </p>
+                <div class="centertext">
+                 <input type="button" value="Water drink Reminder" class="button" id="waterButton" onclick="reminder()">
+                <input type="button" value="Stop The Reminder" class="button" id="waterButton" onclick="myStopFunction()">
+                    </div>
+        
+            </div>
+            
+            <h1 class="centertext">Water Calculator</h1>
+            <form name="water">
+                <div class="centertext">
+                <label for="age">Age:</label>
+                <input type="text" id="age" placeholder="Enter Your age"><br><br>
+                <label for="male">Male:</label>
+                <input type="radio" value="Male" id="male" name="mf">
+                <label for="female">Female:</label>
+                <input type="radio" value="female" id="female" name="mf"><br>
+                <br><br><input type="button" value="Calculate" class="button" id="button" onclick="myFunction()">
+                    </div>
+            </form>
+            <p class="result">
+                The amount of water daily require is : <span id="result"></span>
+            </p>
+           </main>
+    </div>
+    <footer>
+      <p>Developed by: Asad Vhora</p>
+  <p>Copyright &copy; 2019 </p>
+    </footer>
+</body></html>

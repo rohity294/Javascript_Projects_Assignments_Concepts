@@ -1,0 +1,19 @@
+	.kwicks-vertical {
+				width: 445px;
+				height: 445px;
+			}
+			.kwicks-vertical > li {
+				height: 145px;
+				margin-top: 5px;
+			}
+			.kwicks-horizontal {
+				width: 445px;
+				height: 100%;
+			}
+			.kwicks-horizontal > li {
+				height: 100%;
+				width: 145px;
+				float: left;
+				margin-left: 5px;
+				background-color: white;
+			}

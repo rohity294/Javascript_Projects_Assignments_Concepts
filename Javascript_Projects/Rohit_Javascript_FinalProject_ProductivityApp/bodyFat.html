@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Body Fat Calculator</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="js/bodyFat.js"></script>
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <div id="wrapper">
+           <nav>
+                <div class="topnav">
+                    <a href="#">Anytime Fitness</a>
+                    <a class="active" href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                </div>
+            </nav>
+            <main>
+                <div class="container">
+                    <img src="images/fat.jpg" alt="a women jumping from one mountain to another">
+                <h1 class="headImage">Body Weight: Calculate Weight By Using Body Parts.</h1>
+                    <h2>Importance of Healthy Weight</h2>
+                    <h2><p>Maintaining a healthy weight is important for health. In addition to lowering the risk of heart disease, stroke, diabetes, and high blood pressure, it can also lower the risk of many different cancers.
+Move more, eat less. Turning off the television and skipping the sugary drinks are two ways to get started.
+Your weight, your waist size, and the amount of weight gained since your mid-20s can have serious health implications. These factors can strongly influence your chances of developing the following diseases and conditions:</p></h2>
+                    </div>
+                <h1 id="weightcalculater">Body Weight Calculator</h1>
+                        <form name="fat" id="aform">
+                            <div id="formContent">
+                            <label for="weight" class="label">Weight</label>
+                            <input type="text" name="weight" id="weight" class="lineHeight" placeholder="Pounds">
+                                <span class="color"></span><br>
+                            <label for="height" class="label">Height</label>
+                            <input type="text" name="height" id="height" class="lineHeight" placeholder="Feets">
+                                <span class="color"></span><br>
+                            <label>Neck</label>
+                            <input type="text" name="neck" id="neck" class="lineHeight" placeholder="cm">
+                                <span class="color"></span><br>
+                            <label for="gender" class="label">Gender</label>
+                            <input type="radio" id="female" name="selection" value="female" checked>
+                            <label for="Female" class="label">Female</label>
+                            <input type="radio" id="male" name="selection" value="male">
+                            <label for="male" class="label">Male</label><br>
+                            <label for="age">Age</label>
+                            <input type="text" id="age" class="lineHeight" name="age">
+                                <span class="color"></span><br>
+                            <label>Waist</label>
+                            <input type="text" id="weist" class="lineHeight" name="waist" placeholder="feet">
+                                <span class="color"></span><br>
+                            <label>Hip</label>
+                            <input type="text" name="hip" id="hip" placeholder="feet">
+                                <span class="color"></span><br>
+                            <div class="button">
+                            <input type="button" id="Clickk" value="Calculate">
+                                <input type="button" id="clear" value="Clear">
+                            </div>
+                                <p class="result">Your Total BFP: <span id="result"></span></p>
+                            </div>
+                        </form>
+                    <table id="table">
+  <tr>
+    <th>Essential</th>
+    <th>athletes</th> 
+    <th>Fitness</th>
+      <th>Average</th>
+      <th>Obese</th>
+  </tr>
+  <tr>
+    <td>Under 5 Percent</td>
+    <td>From 5 to 10</td> 
+    <td>From 10 to 15 Percent</td>
+      <td>From 15 to 20 Percent</td>
+      <td> From 20 to 30 Percent</td>
+  </tr>
+</table>
+                    
+                </main>
+            
+            </div>
+         <footer>
+            <p>Developed by: Atul Kapila</p>
+            <p>Copyright &copy; 2019 </p>
+        </footer>
+    </body>
+</html>

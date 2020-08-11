@@ -1,0 +1,92 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Scientific Calculator</title>
+        <meta name="description" content="An interactive scientific calculator application.">
+        <link rel="stylesheet" type="text/css" href="my_working.css">
+        <script src="my_working.js"></script>
+    </head>
+    <body>
+
+        <div id="wrapper">
+
+      
+
+         <head><h1>A Scientific Calculator</h1></head>  
+         
+         <main>
+
+      
+         <form id="Form_Calc">
+                <table id="Table_Calc" cellspacing="0" cellpadding="1">
+                <tr>
+                    <td colspan="5"><input id="row1" name="row1" value="0"></td>
+                </tr>
+                <tr>
+                        <td><input type="button" class="OtherButton" value="Clear" onclick="clearAll(form)"></td>
+                        <td><input type="button" class="OtherButton" value="Backspace" onclick="deleteSymbol(form)"></td>
+                        <td><input type="button" class="OtherButton" value="=" onclick="result(form)"></td>
+                        <td><input type="button" class="SymbolButton" value="+" onclick="printSymbol(form, '+')"></td>
+                        <td><input type="button" class="SymbolButton" value="-" onclick="printSymbol(form, '-')"></td>             
+                </tr>
+                <tr>
+                    <td><input type="button" class="NumberButton"  value="1" onclick="printSymbol(form, '1')"></td>
+                    <td><input type="button" class="NumberButton"  value="2" onclick="printSymbol(form, '2')"></td>
+                    <td><input type="button" class="NumberButton"  value="3" onclick="printSymbol(form, '3')"></td>
+                    <td><input type="button" class="SymbolButton"  value="*" onclick="printSymbol(form, '*')"></td>
+                    <td><input type="button" class="SymbolButton"  value="/" onclick="printSymbol(form, '/')"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="NumberButton"  value="4" onclick="printSymbol(form, '4')"></td>
+                    <td><input type="button" class="NumberButton"  value="5" onclick="printSymbol(form, '5')"></td>
+                    <td><input type="button" class="NumberButton"  value="6" onclick="printSymbol(form, '6')"></td>
+                    <td><input type="button" class="SymbolButton"  value="Modulus" onclick="calcModulus(form)"></td>
+                    <td><input type="button" class="SymbolButton" id="SymbolButtonDot"  value="." onclick="printSymbol(form, '.')"></td>             
+                </tr>
+                <tr>
+                    <td><input type="button" class="NumberButton"  value="7" onclick="printSymbol(form, '7')"></td>
+                    <td><input type="button" class="NumberButton"  value="8" onclick="printSymbol(form, '8')"></td>
+                    <td><input type="button" class="NumberButton"  value="9" onclick="printSymbol(form, '9')"></td>
+                    <td><input type="button" class="SymbolButton"  value="Square" onclick="calcSquare(form)"></td>
+                    <td><input type="button" class="SymbolButton"  value="Cube" onclick="calcCube(form)"></td>             
+                </tr>
+                <tr>
+                    <td><input type="button" class="NumberButton" value="0" onclick="printSymbol(form, '0')"></td>
+                    <td><input type="button" class="SymbolButton"  value="&#960;" onclick="printSymbol(form, '3.14159')"></td>
+                    <td><input type="button" class="SymbolButton"  value="Exponent" onclick="calcExponent(form)"></td>
+                    <td><input type="button" class="SymbolButton"  value="Sqr Root" onclick="calcSquareRoot(form)"></td>
+                    <td><input type="button" class="SymbolButton"  value="CubeRoot" onclick="calcCubeRoot(form)"></td>  
+                </tr>
+                <tr>
+                    <td><input type="button" class="SymbolButton"  value="Sin" onclick="calcSin(form)"></td>
+                    <td><input type="button" class="SymbolButton"  value="Cos" onclick="calcCos(form)"></td>
+                    <td><input type="button" class="SymbolButton"  value="Tan" onclick="calcTan(form)"></td>
+                    <td><input type="button" class="SymbolButton"  value="Log" onclick="calcLog(form)"></td>
+                </tr>
+                <tr>
+                    <td><input type="button" class="SymbolButton" value="(" onclick="printSymbol(form,'(')"></td>
+                    <td><input type="button" class="SymbolButton" value=")" onclick="printSymbol(form,')')"></td>
+                    <td><input type="button" class="SymbolButton" value="Percent" onclick="calcPercentage(form)"></td>
+                </tr>
+                
+                </table>
+                </form>        
+                
+                <p>
+                    Kindly note:- For Sin,Cos,Tan,Log,Exponent,square,cube,square root,cube root etc operations, type number and hit relevant button.<br>
+                    Eg: 45 Sin, 100 Log, 56 Exponent, 4 square, 6 cube, 16 square root, 125 cube root<br>
+                    Also note that using % in any evaulation expression would mean 'modulus' and provide remainder. Use separate 'percent' button if you intend to evaluate percentage.
+                </p>
+    
+            </main>
+         
+
+         <footer>
+                   <h3> &copy; Rohit</h3>
+         </footer>
+        
+        </div>
+        
+    </body>
+</html>

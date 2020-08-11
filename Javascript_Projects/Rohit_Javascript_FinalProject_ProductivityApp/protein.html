@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="utf-8">
+    <title>Protein Calculate</title>
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <script src="js/protein.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <nav>
+                <div class="topnav">
+                    <a href="#">Anytime Fitness</a>
+                    <a class="active" href="index.html">Home</a>
+                    <a href="services.html">Services</a>
+                </div>
+            </nav>
+        <main>
+
+            <div class="container">
+                <img src="images/protein.jpg" alt="a women jumping from one mountain to another">
+                <h1 class="headImage">Protein Intake – How Much Protein Should You Eat Per Day?</h1>
+                <h2>Dietary Protein Recommendations</h2>
+                <p>Traditionally, protein recommendations have been based on studies that estimate the minimum protein intake necessary to maintain nitrogen balance [3,8]. However, the problem with relying on these results is that they do not measure any physiological endpoints relevant to healthy aging, such as muscle function. The current dietary recommendations for protein intake include the dietary reference intakes (DRI) for macronutrients, which include an estimated average requirement (EAR), a recommended dietary allowance (RDA) and an acceptable macronutrient distribution range (AMDR) [14]. In the case of daily protein intake, the EAR for dietary protein is 0.66 g/kg/day and the Food and Nutrition Board recommends an RDA of 0.8 g/kg/day for all adults over 18 years of age, including elderly adults over the age of 65. The RDA for protein was based on all available studies that estimate the minimum protein intake necessary to avoid a progressive loss of lean body mass as determined by nitrogen balance [3,8]. The Food and Nutrition Board recognizes a distinction between the RDA and the level of protein intake needed for optimal health. Therefore, the recommendation for the ADMR includes a range of optimal protein intakes in the context of a complete diet (10%–35% of daily energy intake come from protein ), which makes the ADMR more relevant to normal dietary intake than the RDA.</p>
+                <h2>What type of Food has most protein.</h2>
+                <p>
+                    There are many different combinations of food that a person can eat to meet their protein intake requirements. For many people, a large portion of protein intake comes from meat and dairy, though it is possible to get enough protein while meeting certain dietary restrictions you might have. Generally, it is easier to meet your RDA of protein by consuming meat and dairy, but an excess of either can have a negative health impact. There are plenty of plant-based protein options, but they generally contain less protein in a given serving. Ideally, a person should consume a mixture of meat, dairy, and plant-based foods in order to meet their RDA and have a balanced diet replete with nutrients.
+
+                    If possible, consuming a variety of complete proteins is recommended. A complete protein is a protein that contains a good amount of each of the nine essential amino acids required in the human diet. Examples of complete protein foods or meals include:
+                </p>
+                <h2>Want to know which food has more protein!!!<br><button onclick="typeWriter()" class="button">Click me</button></h2>
+                <p id="list"></p>
+            </div>
+            <h1 id="proteinn">Protein Calculator</h1>
+            <form name="protein" >
+                <div id="protein">
+                <label for="age">Age:</label>
+                <input type="text" id="age" placeholder="Enter Your age"><br><br>
+                <label for="male">Male:</label>
+                <input type="radio" value="Male" id="male" name="mf">
+                <label for="female">Female:</label>
+                <input type="radio" value="female" id="female" name="mf"><br>
+                <label for="weight">weight:</label>
+                <input type="text" id="weight" placeholder="Enter Your weight in punds"><br><br><input type="button" value="Calculate" class="button" id="button" onclick="myFunction()">
+                    </div>
+            </form>
+            <p class="result">
+                The gram of protein daily require is : <span id="result"></span>
+            </p>
+            <p class="result">
+                The gram of calories daily require is : <span id="calories"></span>
+            </p>
+
+            <h2>What you should eat:</h2>
+            <P><span id="foodList"></span></P>
+            <h2>Choose your diet plan:</h2>
+            <select id="gg" name="mealPlan">
+                <option value="1200">1200 Calaries</option>
+                <option value="1500">1500 Calaries</option>
+                <option value="2000">2000 Calaries</option>
+            </select>
+            <button onclick="GG()" class="button">Try it</button>
+
+
+            <div class="mealPlan">
+                <div class="meal1 meal">
+                    <h3 class="mealH1">Breakfast</h3>
+                    <p class="mealp" id="breakfast"></p>
+                </div>
+                <div class="meal2 meal">
+                    <h3>Lunch</h3>
+                    <p class="mealp" id="lunch"></p>
+                </div>
+                <div class="meal3 meal">
+                    <h3>Dinner</h3>
+                    <p class="mealp" id="dinner"></p>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <p>Developed by: Asad Vhora</p>
+            <p>Copyright &copy; 2019 </p>
+        </footer>
+    </div>
+</body></html>

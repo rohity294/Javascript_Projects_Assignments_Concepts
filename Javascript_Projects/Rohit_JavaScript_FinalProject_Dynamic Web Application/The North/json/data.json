@@ -1,0 +1,34 @@
+{
+    "data":[
+        {
+            "Name":"Leonard",
+            "GamesPlayed":60,
+            "MinutesPerGame":34.0,
+            "PointsPerGame":26.6,
+            "URL":"assets/imgs/len.png"
+
+        },
+        {
+            "Name":"Siakam",
+            "GamesPlayed":80,
+            "MinutesPerGame":31.9,
+            "PointsPerGame":16.9,
+            "URL":"assets/imgs/saikam.png"
+        },
+        {
+            "Name":"Ibaka",
+            "GamesPlayed":74,
+            "MinutesPerGame":27.2,
+            "PointsPerGame":15.0,
+            "URL":"assets/imgs/ibaka.png"
+        },
+        {
+            "Name":"Lowry",
+            "GamesPlayed":65,
+            "MinutesPerGame":34.0,
+            "PointsPerGame":14.2,
+            "URL":"assets/imgs/lowry.png"
+        }
+        
+    ]
+}
