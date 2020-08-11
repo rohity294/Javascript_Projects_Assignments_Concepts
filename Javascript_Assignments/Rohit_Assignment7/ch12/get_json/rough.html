@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Use Expanded JSON File</title>
+    <link href="main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $.getJSON("team.json", function(data) {
+                $.each(data, function() {
+                    $.each(this, function(key, value) {
+
+
+                        //                        
+                        //                        "full_name": "Agnes Agnew",
+                        //		"first_name": "Agnes",
+                        //		"image": "staff/agnes.gif",
+                        //		"title": "Vice President of Accounting",
+                        //		"bio": "With over 14 years of public accounting and business advisory service experience in the Tongas, Ecuador, Canada, Botswana and the US, Agnes is the most seasoned and diversed member of the Vecta Corp. team.",
+                        //		"tag_line": "14 years of proficiency and still going strong"
+
+
+               
+                        					$("#team").append(
+                                                 "Image: " + value.image + "<br>" +
+                        						"Full Name: " + value.full_name + "<br>" + 
+                    						"Title: " + value.title + "<br>" + 
+                    						"Tag Line: " + value.tag_line + "<br><br>"
+                        						);
+
+                            
+                    });
+                });
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <header></header>
+
+    <!--
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="aboutus.html">About Us</a></li>
+            <li><a href="solutions.html">Solutions</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="contactus.html">Contact Us</a></li>
+        </ul>
+    </nav>
+-->
+
+    <main>
+        <img id="myimg" alt="" height="42" width="42">
+        <h3 id="myfullname"></h3>
+        <h3 id="mytitle"></h3>
+        <p id="mytagline"></p>
+
+        <!--		<div id="team"></div>-->
+    </main>
+
+    <footer></footer>
+</body>
+
+</html>

@@ -1,0 +1,236 @@
+#JobsForm
+{
+    padding:2em;
+
+}
+
+label {
+    width:180px;
+    clear:left;
+    text-align:right;
+    padding-right:10px;
+}
+
+input,textarea,label {
+    float:left;
+}
+
+#myExperience
+{
+   display: block;
+   margin-bottom: 1em;
+}
+
+#mySubmit
+{
+    
+margin-left: 1.5em; 
+
+margin-top: 3em;
+ 
+}
+
+#myDiv{ text-align: left; }
+
+
+*{
+box-sizing: border-box;  
+}
+
+body{
+    background-image: url("images/background.gif");
+    background-color:  #FCEBB6;
+    color: #221811;
+    font-family: Verdana, Arial, sans-serif;
+    
+}
+
+header
+{
+    background-color: #D2B48C;
+    height: 150px;
+    background-image:url("images/javajamlogo.jpg");
+    background-repeat: no-repeat;
+
+}
+
+h1
+{
+    padding-top: 45px;
+    padding-left: 220px;
+    font-size: 3em;
+}
+
+nav
+{
+    width: 200px;
+     float: left;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    padding-top: 10px;
+    
+}
+
+nav a { 
+    text-decoration: none; 
+}
+
+nav a:link
+{
+    color: #FEF6C2;
+}
+
+nav a:visited
+{
+    color: #D2B48C;
+}
+
+nav a:hover {
+    color: #CC9933;
+}
+
+nav ul
+{
+    list-style: none;
+    padding-left: 0;
+}
+
+footer
+{
+    background-color: #D2B48C;
+    font-size: 0.60em;
+    font-style: italic;
+    text-align: center;
+    padding-bottom: 10px;
+    border-top: 2px solid #221811;  
+}
+
+h4
+{
+     background-color: #D2B48C;
+     font-size: 1.2em;
+    padding-left: 10px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    border-bottom: 1px solid black;
+    clear: left;
+}
+
+
+.floatleft
+{   float: left;
+    padding-right: 20px;
+    padding-bottom: 20px;
+}
+
+
+main
+{
+    padding-left:0;
+    padding-right:0;
+    padding-top:0;
+    padding-bottom:2em;
+    margin-left:200px;
+    display:block;
+    background-color:#FEF6C2; 
+}
+
+
+main h2,h3,h4,p,div,ul,dl
+{
+    padding-left: 3em;
+    padding-right: 2em;
+    
+}
+
+.details
+{
+    padding-left: 20%;
+    padding-right: 20%;
+    overflow: auto;
+    
+}
+
+
+img{
+    padding: 0 10px;
+}
+
+#wrapper
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    background-color: #231814;
+    min-width: 900px;
+    max-width: 1280px;
+    box-shadow: 5px 5px 7px #221811;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+#heroroad{
+    background-image: url("images/heroroad.jpg");
+    background-size: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+}
+
+#heromugs{
+    background-image: url("images/heromugs.jpg");
+    background-size: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+}
+
+#heroguitar
+{
+    background-image: url("images/heroguitar.jpg");
+    background-size: 100%;
+    height: 250px;
+    background-repeat: no-repeat;
+}
+
+header, nav, main, footer { display: block; }
+
+table
+{
+    width: 90%;
+    margin: auto;
+    border-spacing: 0;
+    background-color: #ffffcc;
+    
+}
+
+
+th,td
+{
+    padding: 10px;
+    
+}
+
+tr:nth-child(odd) 
+{
+    background-color: #d2b48c;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

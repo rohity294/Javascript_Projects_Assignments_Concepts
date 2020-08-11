@@ -1,0 +1,97 @@
+<html>
+<head>
+<title>Sample Title</title>    
+</head>
+<!-- <link rel="stylesheet" type="text/css" href="mine1.css"></link> -->
+<style>
+.p2{
+    display:none;
+}
+
+.P2Show{
+
+    display:inline-block;
+}
+
+.AHide{
+    display:none;
+}
+
+.Hide{
+    display:none;
+}
+.Show{
+    display:inline-block;
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script>
+$(document).ready(
+
+function(){
+
+    $("a").click(
+        function(evt){
+            evt.preventDefault();
+            // document.write("default prevented.");
+        
+
+        }
+        );
+
+        $("a").click(
+        function(evt){
+           
+           $(this).toggleClass("AHide");
+           $(this).next().toggleClass("P2Show");
+           $(".Hide").toggleClass("Show");
+        
+        }
+        );
+
+    
+}
+
+);
+    
+
+
+    
+
+</script>
+
+</head>
+
+<body>
+
+<h1>Sample h1 heading</h1>
+
+<a href="https://youtube.com">Link to youtube</a>
+
+
+<div id="d1">
+  <h1>Book Name</h1>
+
+  <h2>Book Description</h2>
+  <p class="p1">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+  <a href="#">Read More</a>
+  <p class="p2"><br>bbbbbbbbbbbbbbbb<br>bbbbbbbbbbb<br>bbbbbbb</p>
+  <br><a href="#" class="Hide">Read Less</a>
+
+  <h2>About the authors</h2>
+  <p class="p1">aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</p>
+  <a href="#">Read More</a>
+  <p class="p2"><br>bbbbbbbbbbbbbbbb<br>bbbbbbbbbbb<br>bbbbbbb</p>
+  <br><a href="#" class="Hide">Read Less</a>
+
+</div>
+
+</body>
+</html>
+
+
+
+
+
